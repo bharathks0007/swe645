@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Survey_Page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <div id="rectangle">
+    <h1>Survey_Page</h1>
+  </div>
+
+  <!-- <nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0">Survey_Page</span>
+  </nav> -->
+  <form>
+    <div class="form-group required row ">
+      <label for="FirstName" class="col-sm-2 col-form-label control-label">FirstName:</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control" autofocus="autofocus" id="label-UserName" value="" placeholder="FirstName">
+      </div>
+    </div>
+    <form>
+      <div class="form-group required row ">
+        <label for="LastName" class="col-sm-2 col-form-label control-label">LastName:</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" autofocus="autofocus" id="label-UserName" value="" placeholder="LastName">
+        </div>
+      </div>
+    <div class="form-group required row bg-secondary">
+      <label for="StreetAddress" class="col-sm-2 col-form-label control-label">StreetAddress:</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control" id="usr" placeholder="StreetAddress">
+      </div>
+    </div>
+    <div class="form-group required row">
+      <label for="City" class="col-sm-2 col-form-label control-label">City:</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control" id="usr" placeholder="City" required autocomplete="City">
+      </div>
+    </div>
+    <div class="form-group required row">
+      <label for="State" class="col-sm-2 col-form-label control-label">State:</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control" id="usr" placeholder="State" required autocomplete="State">
+      </div>
+    </div>
+    <div class="form-group required row">
+      <label for="ZipCode" class="col-sm-2 col-form-label control-label">Zipcode:</label>
+      <div class="col-sm-6">
+        <input type="number" class="form-control" id="usr" placeholder="ZipCode" autocomplete="ZipCode">
+      </div>
+    </div>
+    <div class="form-group required row">
+      <label for="Phone" class="col-sm-2 col-form-label control-label">Phone:</label>
+      <div class="col-sm-6">
+        <input type="tel" class="form-control" id="usr" placeholder="Phone" required autocomplete="Phone">
+      </div>
+    </div>
+    <div class="form-group required row">
+      <label for="Email" class="col-sm-2 col-form-label control-label">Email:</label>
+      <div class="col-sm-6">
+        <input type="email" class="form-control" id="usr" placeholder="name@example.com" required autocomplete="email">
+      </div>
+    </div>
+    <!-- <div class="form-group required row">
+      <label for="URL" class="col-sm-2 col-form-label control-label">URL:</label>
+      <div class="col-sm-6">
+        <input type="url" class="form-control" id="usr" placeholder="http://www.example.com" required autocomplete="url">
+      </div> -->
+    </div>
+    <div class="form-group required row">
+      <label for="Date" class="col-sm-2 col-form-label control-label">Date of Survey:</label>
+      <div class="col-sm-6">
+        <input type="date" class="form-control" id="usr" required autocomplete="date">
+      </div>
+    </div>
+  </form>
+
+
+
+  <form class="form-group1" action="index.html" method="post">
+    <h4>Things you liked about the University</h4>
+
+    <label class="checkbox-inline"><input type="checkbox" value="">Students</label>
+    <label class="checkbox-inline"><input type="checkbox" value="">Location</label>
+    <label class="checkbox-inline"><input type="checkbox" value="">Campus</label>
+    <label class="checkbox-inline"><input type="checkbox" value="">Atmosphere</label>
+    <label class="checkbox-inline"><input type="checkbox" value="">Dorm_Rooms</label>
+    <label class="checkbox-inline"><input type="checkbox" value="">Sports</label>
+
+    <h4>Things intrest you about the University</h4>
+    <label class="radio-inline"><input type="radio" name="optradio">Friends</label>
+    <label class="radio-inline"><input type="radio" name="optradio">Television</label>
+    <label class="radio-inline"><input type="radio" name="optradio">Internet</label>
+    <label class="radio-inline"><input type="radio" name="optradio">Other</label>
+
+  </form>
+
+
+
+  <form class="form-group2 row" action="index.html" method="post">
+
+    <!-- <div class="form-group required row">
+      <label for="" class="col-sm-2 col-form-label control-label-inline">Enter Graduation Month:</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control row" name="" value="" placeholder="Enter Graduation Month" list="Month">
+      </div>
+    </div>
+    <div class="form-group required row">
+      <label for="" class="col-sm-2 col-form-label control-label-inline">Enter the Year:</label>
+      <div class="col-sm-6">
+        <input type="number" class="form-control row" name="" value="" placeholder="Enter the Year">
+      </div>
+    </div> -->
+
+    <datalist id="Month">
+      <option value="January"></option>
+      <option value="February"></option>
+      <option value="March"></option>
+      <option value="April"></option>
+      <option value="May"></option>
+      <option value="June"></option>
+      <option value="July"></option>
+      <option value="August"></option>
+      <option value="September"></option>
+      <option value="October"></option>
+      <option value="November"></option>
+      <option value="December"></option>
+    </datalist>
+
+    <h4 class="last">How much do you recommend GMU to others</h4>
+    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+      <option selected>Open this select menu</option>
+      <option value="1">Very Likely</option>
+      <option value="2">Likely</option>
+      <option value="3">Unlikely</option>
+    </select>
+
+    <p>
+      <label for="data">Data:</label>
+      <input type="text" id="data" name="data" value="" placeholder="Enter atleast 10 numbers with commas">
+    </p>
+
+
+
+
+    <div class="form-group">
+      <label class="control-label col-sx-10" for="comment"><h4>Comment:</h4></label>
+      <textarea class="form-control" rows="5" id="comment"></textarea>
+      <button type="button" class="btn btn-primary">Submit</button>
+      <button type="button" class="btn btn-primary">Cancel</button>
+    </div>
+
+  </form>
+
+
+</body>
+
+<a href="https://www.gmu.edu" target="_self">
+<img class="img" src="images/GMU.png" alt="" width="10%" height="20%">
+
+</html>
