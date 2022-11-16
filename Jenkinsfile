@@ -1,11 +1,16 @@
 pipeline{
+    agent any
 	stages{
+        stage('Build Maven'){
+            steps{
+                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/bharathks0007/swe645']]])
+            }
+        }
 		stage('Build Docker Image'){
 			steps{
 				script{
-					checkout scm
 					sh 'rm -rf *.war'
-					sh 'jar -cvf sweassignment2.war -C WebContent/ .'
+					sh 'jar -cvf sweassignment2.war css images index.html'
                         		def customImage = docker.build("bharathks007/swe645survey:${env.BUILD_NUMBER}")
                 		}
             		}
