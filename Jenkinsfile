@@ -1,10 +1,7 @@
 pipeline {
     agent any
-    tools {
-        any
-    }
     stages{
-        stage('Build Maven'){
+        stage('Git Checkout'){
             steps{
                 checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/bharathks0007/swe645']]])
                 
